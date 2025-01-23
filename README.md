@@ -1,2 +1,2 @@
 # tsunami
-Following Modern Fortran's tutorial by Curcic
+Following Modern Fortran's book by Curcic
