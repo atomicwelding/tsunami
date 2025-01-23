@@ -7,7 +7,7 @@ data = np.loadtxt("save.txt")
 
 # Define spatial domain
 dx = 1.0
-x = data[:, 0] * dx
+x = np.linspace(0,100,num=100)
 
 # Create a figure and axis
 fig, ax = plt.subplots()
@@ -29,7 +29,7 @@ def animate(t):
 
 # Create the animation
 ani = animation.FuncAnimation(
-    fig, animate, frames=100, init_func=init, interval=10, blit=True, repeat=True
+    fig, animate, frames=5000, init_func=init, interval=10, blit=True, repeat=True
 )
 
 # Show the animation
